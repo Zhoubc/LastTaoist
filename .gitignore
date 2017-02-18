@@ -1,5 +1,7 @@
 Library
 Temp
+LastTaoist_Data
+*.exe
 *.csproj
 *.sln
 *.userprefs

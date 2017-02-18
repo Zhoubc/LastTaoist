@@ -5,7 +5,7 @@ public class BulletCpt : MonoBehaviour {
 
 	public float speed = 200f;
 	Animator anim;
-
+	public Vector2 dir = new Vector2(0 , 0);
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
@@ -13,7 +13,7 @@ public class BulletCpt : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		transform.Translate (Vector2.left * speed * Time.deltaTime);
+		transform.Translate (dir * speed * Time.deltaTime);
 	}
 	 
 	void OnTriggerEnter2D(Collider2D collider){
